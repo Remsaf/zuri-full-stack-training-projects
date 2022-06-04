@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Quiz</title>
+    <style>
+        body* {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #box {
+            width: 50%;
+            background-color: bisque;
+        } 
+        h2 {
+            background-color: gray;
+        }
+        button {
+            background-color: aqua;
+            margin:30px 10px;
+            height: 40px;
+            border-radius: 5px;
+            border-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+        <h2>Quiz on important Facts</h2>
+    <h1>Which One of these is a javascript package manager?</h1>
+    <input type="radio" id="html" name="fav_language" value="HTML" />
+    <label for="html">a: Node.js</label><br />
+    <input type="radio" id="css" name="fav_language" value="CSS" />
+    <label for="css">b:TypeScript</label><br />
+    <input
+      type="radio"
+      id="javascript"
+      name="fav_language"
+      value="JavaScript"
+      checked="yess"
+    />
+    <label for="javascript">c:npm</label><br><br>
+    <button>previous question</button>
+    <button>Next question</button>
+    </div>
+  </body>
+</html>
+def number_words(text):
+  print('String-', text)
+  no_of_words = 1
+  for ch in text:
+    if (ch == ' ' or ch == '\t' or ch == '\n'):
+      no_of_words += 1
+  print('Total number of words in String', no_of_words)
+
+number_words('This is a test string')
+s = 'This Python program counts\tnumber of words in a String.'
+number_words(s)
